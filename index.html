@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Whack A Mole</title>
+</head>
+
+<body>
+    <h1 class="title">Whack-A-Mole</h1>
+    <button onclick="start()">START GAME</button>
+
+    <iframe src="bg-music.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio src="./bg-music.mp3" id="player" autoplay loop muted />
+</body>
+
+<script>
+    const audio = new Audio('bg-music.mp3');
+    audio.play();
+    // document.querySelector("#bg-music").play()
+
+    const start = () => {
+        window.location = "./game.html"
+    }
+</script>
+
+</html>
